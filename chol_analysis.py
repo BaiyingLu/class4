@@ -1,4 +1,4 @@
-# class 4
+# class 5
 def HDL_anaysis(HDL_level):
     print("Here")
     if HDL_level>=60:
@@ -18,6 +18,8 @@ def LDL_anaysis(LDL_level):
     else:
         return "Very High"
 
+def new_feature():
+    pass #run the blank code
 
 def Cholestrol_analysis():
     print("Cholestrol analysis")
