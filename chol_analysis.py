@@ -21,6 +21,8 @@ def LDL_anaysis(LDL_level):
 def new_feature():
     pass #run the blank code
 
+def name():
+    pass
 def Cholestrol_analysis():
     print("Cholestrol analysis")
     HDLinput = input("Enter test result:")
