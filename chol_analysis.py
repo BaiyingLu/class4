@@ -1,14 +1,15 @@
 # class 4
 def HDL_anaysis(HDL_level):
-    print("Here")
+    print("This is HDL level test")
     if HDL_level>=60:
         return "Normal"
     elif 40<=HDL_level<60:
         return "Borderline low"
     else:
         return "Low"
+
 def LDL_anaysis(LDL_level):
-    print("Here")
+    print("This is LDL level test")
     if LDL_level<130:
         return "Normal"
     elif 130<=LDL_level<159:
@@ -17,6 +18,16 @@ def LDL_anaysis(LDL_level):
         return "High"
     else:
         return "Very High"
+
+def Cholestrol_overall_level(Chol_o_level):
+    print("This is the cholestrol overall level")
+    if Chol_o_level<200:
+        return "Normal"
+    elif 200<=Chol_o_level<240:
+        return "Borderline high"
+    else:
+        return "High"
+
 
 
 def Cholestrol_analysis():
@@ -29,6 +40,11 @@ def Cholestrol_analysis():
     if test_info[0] == "LDL":
         answer = LDL_anaysis(int(test_info[1]))
         print("The level is {}".format(answer))
+    if test_info[0] == "COA":
+        answer = LDL_anaysis(int(test_info[1]))
+        print("The level is {}".format(answer))
+
+
 
 def interface():
     while True:
@@ -38,7 +54,7 @@ def interface():
         print("options:")
         print("1 -do analysis")
         print("9 - quit")
-        choice = input('ENter you option:')
+        choice = input('Enter you option:')
         if choice == '9':
             return
         elif choice == "1":
