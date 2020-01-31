@@ -51,7 +51,7 @@ def interface():
 def fever_check(temp_list):
     fever = False
     for temperature in temp_list:
-        if temperature > 98.6:
+        if temperature > 98.7:
             fever = True
     return fever
 if __name__=="__main__":

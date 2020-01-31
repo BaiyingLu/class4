@@ -17,4 +17,5 @@ def test_fever_check():
     from chol_analysis import fever_check
     new_data = [96.0,100,105.1,97]
     answer = fever_check(new_data)
-    exepcted = "Normal"
+    exepcted = True
+    assert answer == expected
